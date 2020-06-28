@@ -76,7 +76,7 @@ public class CartTest {
     // test case 3
     // As user, I want to add at least 10 trips to the cart (one kind)
     @Test
-    public void addTenTripsOneKindToCartTest() {
+    public void addTenOneKindTripsToCartTest() {
         goToProductPage();
         changeQuantity("10");
         getQuantityValue();
@@ -89,7 +89,7 @@ public class CartTest {
     // As user I want to add at least 10 different trips to cart
 
     @Test
-    public void addTenTripsDifferentKindToCartTest() {
+    public void addTenDifferentKindTripsToCartTest() {
         for (String productPage : productPages) {
             driver.navigate().to("https://fakestore.testelka.pl/product" + productPage);
             addToCartFromProductPage();
